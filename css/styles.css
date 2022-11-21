@@ -167,18 +167,7 @@ img {
 
 /*HERO  замовити послугу */
 
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: 
-  /* linear-gradient(rgba(47, 48, 58, 0.4)) */
-  url(../imeges/hero.jpg);
-}
+
 
 .hero {
   padding-top: 200px;
@@ -201,6 +190,7 @@ img {
 .hero-title {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 
   letter-spacing: 0.06em;
 
@@ -236,7 +226,7 @@ img {
   border: 0;
 
   padding: 10px 32px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .main-button:hover,
@@ -315,8 +305,8 @@ img {
 }
 
 .section-title.our-classes {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -373,6 +363,9 @@ img {
   padding-top: 50px;
   /* padding-bottom: 94px; */
 }
+.team.list .item{
+  width: 270px;
+}
 
 .team.list .item:not(:last-child) {
   margin-right: 30px;
@@ -400,7 +393,9 @@ img {
 
 .services.list {
   margin-bottom: 50px;
-  /* margin-top: 94px; */
+}
+.services.list .item:not(:last-child){
+  margin-right: 8px;
 }
 
 .button {
@@ -417,7 +412,7 @@ img {
   border: none;
 
   padding: 6px 22px;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 
   cursor: pointer;
 }
@@ -445,6 +440,10 @@ img {
   border: 1px solid #000;
   border-top: none;
   border-color: #eeeeee;
+}
+
+.card-item{
+  width: 370px;
 }
 
 .section-site .title {
@@ -476,7 +475,7 @@ img {
 .footer-container {
   display: flex;
   flex-direction: column;
-
+  
   width: 1200px;
 }
 
@@ -485,22 +484,27 @@ img {
   margin-top: 0;
 }
 
-.google-link {
+/* .google-link {
   color: var(--third-text-color);
-}
-
-.address .link {
-  color: var(--third-text-color);
-
+} */
+.address{
   font-style: normal;
+}
+.address-item .link {
+  color: var(--third-text-color);
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-
-  margin-bottom: 9px;
-
+  /* margin-bottom: 9px; */
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+.address-item:not(:last-child){
+  margin-bottom: 9px;
+}
+.address-item .link.address-contact  {
+  color:rgba(255, 255, 255, 0.6);;
 }
 
 .address .link:hover,
@@ -508,7 +512,4 @@ img {
   color: var(--accent-text-color);
 }
 
-.address a[href='info@devstudio.com'],
-.address a[href='+380961111111'] {
-  color: rgba(255, 255, 255, 0.6);
-}
+
