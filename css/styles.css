@@ -170,10 +170,23 @@ img {
 
 
 .hero {
+  background: #2f303a;
+}
+.overlay{
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url(../imeges/hero.jpg);
+
+  
+
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background: #2f303a;
 }
 
 .hero-container {
@@ -183,7 +196,6 @@ img {
 
   flex-direction: column;
   text-align: center;
-
   align-items: center;
 }
 
@@ -248,10 +260,16 @@ img {
 .conteiner.feature-list {
   background-color: var(--primary-background-color);
 }
-/* .feature-icon{
-  display :block
-  ;
-} */
+
+.icon-container{
+  display: flex;
+  background-color: #F5F4FA;
+  height: 120px;
+  width: 270px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
 
 .feature-list .title {
   font-weight: 700;
@@ -386,6 +404,27 @@ img {
   letter-spacing: 0.03em;
 }
 
+.social-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: rgba(140, 150, 150, 0.6);
+}
+
+.social-link:hover,
+.social-link:focus{
+  background-color: #2196F3;
+}
+
+.social-icon:hover,
+.social-icon:focus{
+  fill: #FFFFFF;
+}
+
 /* розділи послуг фільтр */
 
 .services {
@@ -493,6 +532,11 @@ img {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
+.partners-link:hover,
+.partners-link:focus{
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
@@ -506,6 +550,9 @@ img {
 
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-main{
+  display: flex;
 }
 .footer-container {
   display: flex;
@@ -545,6 +592,29 @@ img {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-text-color);
+}
+
+.networks-title{
+  font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+      
+    color: #FFFFFF;
+}
+.networks-list{
+  display: flex;
+  gap: 10px;
+}
+.networks-item{
+  width: 44px;
+  height: 44px;
+  background-color: #F5F4FA;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 
