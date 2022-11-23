@@ -165,10 +165,7 @@ img {
 
 }
 
-/* .address-icon:hover,
-.address-icon:focus{
-  fill: var(--accent-text-color);
-} */
+
 
 .contacts-link:hover,
 .contacts-link:focus {
@@ -393,7 +390,6 @@ img {
 .team.list {
   display: flex;
   padding-top: 50px;
-  /* padding-bottom: 94px; */
 }
 .team.list .item{
   width: 270px;
@@ -415,26 +411,6 @@ img {
   margin-bottom: 16px;
 }
 
-.social-link{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  /* fill: var(--secondary-text-color); */
-
-  border-radius: 50%;
-  background-color: rgba(140, 150, 150, 0.6);
-}
-
-.social-link:hover,
-.social-link:focus{
-  background-color: #2196F3;
-}
-/* =================== */
-.team.list .social-icon{
-  fill: var(--secondary-text-color);
-}
 
 /* розділи послуг фільтр */
 
@@ -494,6 +470,13 @@ img {
   border-top: none;
   border-color: #eeeeee;
 }
+.card-link{
+  display: block;
+}
+.card-link:hover,
+.card-link:focus{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .card-item{
   width: 370px;
@@ -510,8 +493,6 @@ img {
   margin-bottom: 4px;
 }
 .section-site .text {
-  /* color: var(--secondary-text-color); */
-
   line-height: 1.9;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -635,7 +616,6 @@ img {
   display: flex;
   gap: 10px;
   justify-content: center;
-  background-color:var(--primary-background-color);
 }
 .footer .networks-list{
   background-color: #2F303A;
@@ -651,8 +631,15 @@ img {
   height: 44px;
 
   border-radius: 50%;
-  color: #000;
+  color: #AFB1B8;
 }
+
+.index-box .social-link:hover,
+.index-box .social-link:focus {
+  background-color: #2196F3;
+  color: var(--third-text-color);
+}
+
 .index-box .social-icon{
   fill: currentColor;
 }
