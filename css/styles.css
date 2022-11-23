@@ -411,7 +411,6 @@ img {
 
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
 }
 
 .social-link{
@@ -466,7 +465,6 @@ img {
   border: none;
 
   padding: 6px 22px;
-  /* margin-right: 8px; */
 
   cursor: pointer;
 }
@@ -594,6 +592,9 @@ img {
   margin-top: 0;
 }
 
+/* .google-link {
+  color: var(--third-text-color);
+} */
 .address{
   font-style: normal;
 }
@@ -621,35 +622,43 @@ img {
 
 .networks-title{
   font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
       
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 .networks-list{
   display: flex;
   gap: 10px;
   justify-content: center;
+  background-color:var(--primary-background-color);
 }
+.footer .networks-list{
+  background-color: #2F303A;
+}
+
+
+
 .networks-item{
   display: flex;
   width: 44px;
   height: 44px;
-  background-color: var(--primary-background-color);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  border: 1px solid var(--primary-text-color);
+  
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.socnetwork-link{
-  display: flex;
-}
 .socnetwork-icon{
-  fill: #AFB1B8;
+  fill: var(--third-text-color)  
+}
+.networks-item:focus,
+.networks-item:hover{
+  background-color: var(--accent-text-color);
 }
 
 
