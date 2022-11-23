@@ -364,7 +364,7 @@ img {
   line-height: 1.7;
 }
 
-/* наша команда */
+/* ==========================НАША КОМАНДА======================== */
 
 .section-team {
   background-color: #f5f4fa;
@@ -411,6 +411,7 @@ img {
 
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .social-link{
@@ -419,7 +420,7 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  fill: var(--secondary-text-color);
+  /* fill: var(--secondary-text-color); */
 
   border-radius: 50%;
   background-color: rgba(140, 150, 150, 0.6);
@@ -429,10 +430,9 @@ img {
 .social-link:focus{
   background-color: #2196F3;
 }
-
-.social-icon:hover,
-.social-icon:focus{
-  fill: #FFFFFF;
+/* =================== */
+.team.list .social-icon{
+  fill: var(--secondary-text-color);
 }
 
 /* розділи послуг фільтр */
@@ -640,7 +640,7 @@ img {
   background-color: #2F303A;
 }
 
-
+/* ======= іконки соцмереж ========= */
 
 .networks-item{
   display: flex;
@@ -648,6 +648,7 @@ img {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
   
   justify-content: center;
   align-items: center;
@@ -659,6 +660,9 @@ img {
 .networks-item:focus,
 .networks-item:hover{
   background-color: var(--accent-text-color);
+}
+.index-box .social-icon{
+  fill: #AFB1B8;
 }
 
 
