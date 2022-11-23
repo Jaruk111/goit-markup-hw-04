@@ -161,17 +161,18 @@ img {
 }
 .address-icon{
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
+
 }
-.address-icon:hover,
+
+/* .address-icon:hover,
 .address-icon:focus{
   fill: var(--accent-text-color);
-}
+} */
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-text-color);
-  fill: var(--accent-text-color);
 }
 
 /*HERO  замовити послугу */
@@ -642,27 +643,18 @@ img {
 
 /* ======= іконки соцмереж ========= */
 
-.networks-item{
+.index-box .social-link{
   display: flex;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-
-  
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-}
-.socnetwork-icon{
-  fill: var(--third-text-color)  
-}
-.networks-item:focus,
-.networks-item:hover{
-  background-color: var(--accent-text-color);
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: #000;
 }
 .index-box .social-icon{
-  fill: #AFB1B8;
+  fill: currentColor;
 }
 
 
