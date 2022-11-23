@@ -586,22 +586,19 @@ img {
 }
 .footer-main{
   display: flex;
+  align-items: baseline
 }
 .footer-container {
   display: flex;
   flex-direction: column;
   
-  width: 1200px;
+  /* width: 1200px; */
 }
 
 .footer .logo {
   color: var(--third-text-color);
   margin-top: 0;
 }
-
-/* .google-link {
-  color: var(--third-text-color);
-} */
 .address{
   font-style: normal;
 }
@@ -611,7 +608,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  /* margin-bottom: 9px; */
+  
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -625,6 +622,10 @@ img {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-text-color);
+}
+
+.container-networks{
+  margin-left: 70px;
 }
 
 .networks-title{
